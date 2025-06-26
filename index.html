@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Adjélé Ahouéfa Madeleine Euloriette</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  background: #6c5ce7;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #dfe6e9;
+}
+
+nav a {
+  margin: 0 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #2d3436;
+}
+
+section {
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #dfe6e9;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #2d3436;
+  color: #dfe6e9;
+}
+
+body.dark-mode nav {
+  background: #636e72;
+}
+
+body.dark-mode nav a {
+  color: #dfe6e9;
+}
+
+body.dark-mode button {
+  background: #0984e3;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Adjélé Ahouéfa Madeleine Euloriette</h1>
+    <p>Étudiante en Gestion Comptable et Financière</p>
+    <button onclick="toggleMode()">🌙/☀️</button>
+  </header>
+
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#experiences">Expériences</a>
+    <a href="#education">Éducation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="profil">
+    <h2>Profil</h2>
+    <p>Étudiante à l'ENCG de Casablanca, motivée et sérieuse, je cherche à m’investir pleinement dans une entreprise pour développer mes compétences professionnelles.</p>
+  </section>
+
+  <section id="experiences">
+    <h2>Expériences Professionnelles</h2>
+    <ul>
+      <li><strong>Caritas Bénin (2021–2022)</strong> : Trésorière – Suivi des finances, rapports financiers</li>
+      <li><strong>MTN Bénin (2021)</strong> : Gérante Mobile Money – Transactions financières, recharges</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Formation</h2>
+    <ul>
+      <li><strong>ENCG Casablanca (2022–présent)</strong> : Ingénierie en gestion comptable et financière</li>
+      <li><strong>Faculté de droit, Abomey-Calavi (2021–2022)</strong></li>
+      <li><strong>Baccalauréat Lettres et SES – MLK, Cotonou (2021)</strong></li>
+    </ul>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <ul>
+      <li><strong>Informatique</strong> : Python, Visual Studio Code</li>
+      <li><strong>Bureautique</strong> : Word, Excel, PowerPoint</li>
+      <li><strong>Gestion</strong> : Ciel Gestion</li>
+      <li><strong>Langues</strong> : Français, Anglais</li>
+      <li><strong>Soft skills</strong> : Leadership, Esprit d’équipe</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="contact.php" method="POST">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ahouéfa Madeleine Euloriette</p>
+  </footer>
+
+  <script >function toggleMode() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+</body>
+</html>
